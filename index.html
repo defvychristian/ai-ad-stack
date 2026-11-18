@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The AI Ad Stack — Turn AI Video Into Product Ads That Sell</title>
-<meta name="description" content="A complete Obsidian vault that takes you from finding the ad angle, to generating clips with Veo 3.1, to packaging a finished ad, to selling it as a service. $27 one-time.">
+<meta name="description" content="A complete Obsidian vault that takes you from finding the ad angle, to generating clips with Veo 3.1, to packaging a finished ad, to selling it as a service. From $27 one-time.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -99,6 +99,19 @@
   .price-card li{font-size:15px;color:var(--muted);padding:7px 0 7px 26px;position:relative;border-bottom:1px solid var(--line)}
   .price-card li::before{content:"✓";position:absolute;left:2px;color:var(--accent);font-weight:700}
   .price-card li b{color:var(--text)}
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:960px;margin:28px auto 0}
+  .tier{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 22px;text-align:left;display:flex;flex-direction:column}
+  .tier.hot{border-color:rgba(166,255,0,.55);box-shadow:0 0 50px rgba(166,255,0,.10)}
+  .tier h3{font-family:'Montserrat',sans-serif;font-size:19px;font-weight:800;margin-bottom:4px}
+  .tier .t-price{font-family:'Montserrat',sans-serif;font-weight:900;font-size:44px;line-height:1;margin:8px 0 4px}
+  .tier .t-price span{font-size:18px;font-weight:700;color:var(--muted);vertical-align:top}
+  .tier .t-sub{color:var(--muted);font-size:13px;margin-bottom:14px}
+  .tier ul{list-style:none;flex:1;margin-bottom:20px}
+  .tier li{font-size:14px;color:var(--muted);padding:6px 0 6px 24px;position:relative;border-bottom:1px solid var(--line)}
+  .tier li::before{content:"✓";position:absolute;left:2px;color:var(--accent);font-weight:700}
+  .tier li b{color:var(--text)}
+  .tier .btn{width:100%;text-align:center}
+  @media(max-width:760px){.tiers{grid-template-columns:1fr}}
   /* faq */
   .faq-item{border-bottom:1px solid var(--line);padding:20px 0}
   .faq-item h3{font-size:17px;margin-bottom:6px}
@@ -117,19 +130,19 @@
 <header>
   <div class="wrap">
     <a class="logo" href="#">THE <b>AI AD STACK</b></a>
-    <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get It — $27</a>
+    <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get It — from $27</a>
   </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
   <div class="wrap">
-    <div class="eyebrow">The AI Ad Stack · $27 One-Time</div>
+    <div class="eyebrow">The AI Ad Stack · From $27 One-Time</div>
     <h1>Turn AI Video Into <span>Product Ads That Sell</span></h1>
     <p class="tagline">Your knowledge is worth more than you think. Your prompts are worth more than a clip.</p>
     <p class="lead">A complete Obsidian vault that takes you from finding the ad angle, to generating the clips with Veo 3.1, to packaging a finished ad, to selling it as a service — built from a real production workflow, not theory.</p>
     <div class="cta-row">
-      <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get The AI Ad Stack — $27<small>One-time payment · No subscription · Yours forever</small></a>
+      <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get The AI Ad Stack — from $27<small>One-time payment · No subscription · Yours forever</small></a>
     </div>
     <img class="cover" src="assets/ai-ad-stack-cover.png" alt="The AI Ad Stack — Turn AI Video Into Product Ads That Sell">
     <p class="fine">Secure checkout by Gumroad · Instant download after purchase</p>
@@ -281,21 +294,49 @@
 <!-- PRICING -->
 <section class="pricing" id="buy">
   <div class="wrap">
-    <div class="eyebrow">One price. Yours forever.</div>
+    <div class="eyebrow">Three ways in. Yours forever.</div>
     <h2>Get The AI Ad Stack</h2>
-    <div class="price-card">
-      <div class="price"><span>$</span>27</div>
-      <p class="price-sub">One-time payment · No subscription · No second checkout</p>
-      <ul>
-        <li><b>The full vault</b> — 29 lessons, Start Here guide, README</li>
-        <li><b>50 tested video prompts</b> + 10 strategy prompts</li>
-        <li><b>7 templates</b> + Marketing Playbook with 30-day launch plan</li>
-        <li><b>Cover image</b> included</li>
-        <li>Obsidian-ready Markdown — open in Obsidian (free) or any text editor</li>
-      </ul>
-      <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get The AI Ad Stack — $27<small>Secure checkout by Gumroad</small></a>
-      <p class="fine" style="margin-top:16px">After checkout, Gumroad delivers the product file. Refunds and disputes are handled by Gumroad.</p>
+    <p class="price-sub" style="text-align:center">One-time payment · No subscription · Pick your version at checkout on Gumroad</p>
+    <div class="tiers">
+      <div class="tier">
+        <h3>Standard</h3>
+        <div class="t-price"><span>$</span>27</div>
+        <p class="t-sub">The vault, for one person</p>
+        <ul>
+          <li><b>The full vault</b> — 29 lessons, Start Here guide, README</li>
+          <li><b>50 tested video prompts</b> + 10 strategy prompts</li>
+          <li><b>7 templates</b> + Marketing Playbook with 30-day launch plan</li>
+          <li><b>Cover image</b> included</li>
+          <li>Licensed for 1 user</li>
+        </ul>
+        <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get Standard — $27</a>
+      </div>
+      <div class="tier hot">
+        <h3>Pro</h3>
+        <div class="t-price"><span>$</span>47</div>
+        <p class="t-sub">Vault + the freelance business system</p>
+        <ul>
+          <li>Everything in <b>Standard</b></li>
+          <li><b>Freelance Business OS for Notion</b> ($19 value) — clients, projects, invoices &amp; income in one workspace</li>
+          <li>Setup guide — 10 minutes from zero to running</li>
+          <li>Licensed for 1 user</li>
+        </ul>
+        <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get Pro — $47</a>
+      </div>
+      <div class="tier">
+        <h3>Team</h3>
+        <div class="t-price"><span>$</span>67</div>
+        <p class="t-sub">The vault, for a small team</p>
+        <ul>
+          <li>Everything in <b>Standard</b></li>
+          <li>Licensed for <b>up to 3 people</b> in one team</li>
+          <li>Share the vault internally with your team</li>
+          <li>Team license included</li>
+        </ul>
+        <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get Team — $67</a>
+      </div>
     </div>
+    <p class="fine" style="margin-top:20px;text-align:center">After checkout, Gumroad delivers the product file. Refunds and disputes are handled by Gumroad.</p>
   </div>
 </section>
 
@@ -331,11 +372,11 @@
     </div>
     <div class="faq-item">
       <h3>Is this a subscription?</h3>
-      <p>No. One-time payment of $27. The vault is yours forever.</p>
+      <p>No. One-time payment — from $27, depending on the version you choose. Yours forever.</p>
     </div>
     <div class="faq-item">
       <h3>Can I share or resell it?</h3>
-      <p>No. Licensed for 1 user. Redistribution is not allowed.</p>
+      <p>Standard and Pro are licensed for 1 user. Team covers up to 3 people in one team. Redistribution is not allowed.</p>
     </div>
   </div>
 </section>
@@ -345,7 +386,7 @@
   <div class="wrap">
     <h2>Make your first ad <span>tonight.</span></h2>
     <p>Three clips, 30 credits, one hour — and a system for the next hundred.</p>
-    <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get The AI Ad Stack — $27<small>One-time payment · No subscription</small></a>
+    <a class="btn" href="https://defvy.gumroad.com/l/ai-ad-stack">Get The AI Ad Stack — from $27<small>One-time payment · No subscription</small></a>
   </div>
 </section>
 
